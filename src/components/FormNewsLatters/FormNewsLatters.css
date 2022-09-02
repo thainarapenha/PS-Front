@@ -1,0 +1,26 @@
+.containerNewsLatters, .formNewsLatter{
+    display: flex;
+    /* border: 1px solid red; */
+}
+.containerNewsLatters{
+    padding: 0 90px 0 250px;
+}
+.textoNewsLatters{
+    width: 50%;
+    padding-right: 50px;
+}
+.formNewsLatter{
+    width: 40%;
+    flex-direction: column;
+}
+.textoNewsLatters h2{
+    padding-bottom: 30px;
+}
+.textoNewsLatters p{
+    padding: 10px 0;
+}
+#btnNews{
+    height: 50px;
+}
+
+
