@@ -2,6 +2,7 @@
 // import reactLogo from './assets/react.svg'
 import { Header } from './components/Header/Header'
 import { Footer } from './components/Footer/Footer'
+import { Product } from './components/Product/Product'
 import { ShareFriends } from './components/ShareFriends/ShareFriends'
 import { FormNewsLatters } from './components/FormNewsLatters/FormNewsLatters'
 import './App.css'
@@ -16,6 +17,7 @@ const App = () => {
       <Header/>
     </div>
       <FormNewsLatters/>
+      <Product/>
       <ShareFriends/>
       <div className="footerMain">
         <Footer/>
