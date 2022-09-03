@@ -1,9 +1,9 @@
 .containerNewsLatters, .formNewsLatter{
     display: flex;
-    /* border: 1px solid red; */
 }
 .containerNewsLatters{
     padding: 0 90px 0 250px;
+    margin: 50px 0;
 }
 .textoNewsLatters{
     width: 50%;
@@ -21,6 +21,7 @@
 }
 #btnNews{
     height: 50px;
+    background-color: #f0462d;
 }
 
 
