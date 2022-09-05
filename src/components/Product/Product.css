@@ -1,9 +1,42 @@
 .containerProduct{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.cards{
+    display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #aab4af;
 }
-.card{
-    border: 1px solid red;
+.item{
+    width: 250px;
+    margin: 10px;
+}
+.btnProduct{
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-size: 12px;
+    background-color: #f0462d;
+}
+#descProduct{
+    font-size: 14px;
+}
+#precoAnterios, #precoParcela{
+    font-size: 12px;
+}
+#precoParcela{
+    padding-bottom: 10px;
+}
+.cards:hover{
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    cursor: pointer;
 }
