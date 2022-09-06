@@ -2,12 +2,13 @@ import React, {useState, useEffect} from 'react';
 import { api } from '../../utils/api';
 import './Product.css'
 
-export function Product(props){
+export function Product(){
 	const [data, setData] = useState([])
 
 	const fetchData = async () => {
 		const response = await api.get()
-		setData(response?.data.products)
+		setData([...data, ...response?.data.products])
+		// console.log(response?.data.products)
 	}  
 
 	useEffect(() => {
@@ -38,6 +39,7 @@ export function Product(props){
 					</div>
 				</div>
 			)}
+			<button className="btnProductMais" onClick={fetchData}>btn produtos</button>
 		</div>
 	);
 }

@@ -27,9 +27,9 @@ export function FormNewsLatters(){
             </div>
             
             <form className='formNewsLatter'>
-                <TextField id="outlined-basic" label="Nome:" variant="outlined" margin="normal"/>
-                <TextField id="outlined-basic" label="E-mail:" variant="outlined" margin="normal"/>
-                <TextField id="outlined-basic" label="CPF:" variant="outlined" margin="normal"/>
+                <TextField id="nomeNews" label="Nome:" variant="outlined" margin="normal"/>
+                <TextField id="emailNews" label="E-mail:" variant="outlined" margin="normal"/>
+                <TextField id="cpfNews" label="CPF:" variant="outlined" margin="normal"/>
 
                 <div className='radioButtonSexo'>
                     <FormControlLabel value="masculino" control={<Radio />} label="Masculino" />

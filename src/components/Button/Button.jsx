@@ -6,12 +6,12 @@
 //   const [data, setData] = useState([])
 
 //   const fetchData = async () => {
-//       const response = await api.get()
-//       setData(response?.data.products)
+//     const response = await api.get()
+//     setData(response?.data.products)
 //   }  
 
 //   useEffect(() => {
-//       fetchData()
+//     fetchData()
 //   }, [])
     
 //     return(

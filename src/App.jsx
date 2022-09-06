@@ -1,26 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { Header } from './components/Header/Header'
-import { Footer } from './components/Footer/Footer'
-// import { Button } from './components/Button/Button.jsx'
+import React from 'react'
+import { Header } from './components/Header/Header.jsx'
+import { Footer } from './components/Footer/Footer.jsx'
 import { Product } from './components/Product/Product.jsx'
 import { ShareFriends } from './components/ShareFriends/ShareFriends'
 import { FormNewsLatters } from './components/FormNewsLatters/FormNewsLatters'
-import { api } from './utils/api.jsx'
 import './App.css'
 
-const App = (props) => {  
-	const [products, setProduct] = useState(props.products)
-	
-	const fetchData = async () => {
-		const response = await api.get()
-		setProduct(response?.data.products)
-		// console.log(response?.data.products)
-	}  
-
-	useEffect(() => {
-		fetchData()
-	}, [])
-
+const App = () => {	
 	return (
 		<main className="App">
 			<div class="headerMain">
@@ -29,8 +15,6 @@ const App = (props) => {
 
 			<FormNewsLatters/>
 			<Product/>
-			{/* <Button/> */}
-
 			<ShareFriends/>
 
 			<div className="footerMain">
