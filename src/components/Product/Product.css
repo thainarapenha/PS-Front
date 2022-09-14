@@ -18,7 +18,7 @@
     width: 250px;
     margin: 10px;
 }
-.btnProduct{
+.btnProduct, .btnProductMais{
     width: 200px;
     height: 30px;
     color: white;
@@ -39,4 +39,12 @@
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
     cursor: pointer;
+}
+.conteinerBTN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    border: 1px solid red;
 }
